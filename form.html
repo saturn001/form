@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript">
+
+      function login()
+
+{
+  var a= document.getElementById('name').value;
+  var b= document.getElementById('password').value;
+  alert(b);
+  if(a == null && a == "" || b.length <= 6)
+  {
+
+      alert("not valid");
+
+    }
+    else{alert("record saved");}
+
+
+}
+
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <form class="" action="/process" method="post">
+
+      Name <input type="text" id="name" name="name" value="">
+      Password <input type="password" id="password" name="password" value="">
+      <button onclick="login()">Submit!!!</button>
+
+    </form>
+
+  </body>
+</html>
